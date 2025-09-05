@@ -17,47 +17,63 @@ import oreomilkshake from "../assets/oreomilkshake.jpeg"
 function HomePage() {
 
   const menuItems = [
-    {
-      name: "Buttery Biscuits",
-      image: biscuits,
-      description: "Freshly baked buttery biscuits with a golden crisp outside and soft inside.",
-    },
-    {
-      name: "Cookie Basket",
-      image: cookiebasket1,
-      description: "An assorted basket of our finest cookies, baked with love and premium ingredients.",
-    },
-    {
-      name: "Fettuccine Crepes",
-      image: fettuccinecrepes,
-      description: "Thin and soft crepes, folded with sweet fillings and a drizzle of chocolate.",
-    },
-    {
-      name: "Fluffy Pancakes",
-      image: pancakes,
-      description: "Stacked pancakes served warm with syrup and a sprinkle of sugar magic.",
-    },
-    {
-      name: "Waffle Pancakes",
-      image: wafflepancakes,
-      description: "Crispy-on-the-outside, fluffy-on-the-inside waffles served pancake-style with syrups.",
-    },
-    {
-      name: "Refreshing Milkshakes",
-      image: milkshakes,
-      description: "Thick, creamy shakes blended with rich flavors and topped with whipped cream.",
-    },
-    {
-      name: "Ice Cream & Pancakes",
-      image: icecreamandpancakes,
-      description: "Warm pancakes paired with scoops of ice cream for a perfect hot-and-cold delight.",
-    },
-    {
-      name: "Oreo Milkshake",
-      image: oreomilkshake,
-      description: "A classic favorite — crushed Oreos blended into a creamy, dreamy milkshake.",
-    },
-  ]
+  {
+    name: "Buttery Biscuits",
+    image: biscuits,
+    description: "Freshly baked buttery biscuits with a golden crisp outside and soft inside.",
+  },
+  {
+    name: "Cookie Basket",
+    image: cookiebasket1,
+    description: "An assorted basket of our finest cookies, baked with love and premium ingredients.",
+  },
+  {
+    name: "Fettuccine Crepes",
+    image: fettuccinecrepes,
+    description: "Thin and soft crepes, folded with sweet fillings and a drizzle of chocolate.",
+  },
+  {
+    name: "Fluffy Pancakes",
+    image: pancakes,
+    description: "Stacked pancakes served warm with syrup and a sprinkle of sugar magic.",
+  },
+  {
+    name: "Waffles",
+    image: wafflepancakes,
+    description: "Crispy-on-the-outside, fluffy-on-the-inside waffles served pancake-style with syrups.",
+  },
+  {
+    name: "Refreshing Milkshakes",
+    image: milkshakes,
+    description: "Thick, creamy shakes blended with rich flavors and topped with whipped cream.",
+  },
+  {
+    name: "Ice Cream & Fettuccine Crepe",
+    image: icecreamandpancakes,
+    description: "Warm pancakes paired with scoops of ice cream for a perfect hot-and-cold delight.",
+  },
+  {
+    name: "Oreo Milkshake",
+    image: oreomilkshake,
+    description: "A classic favorite — crushed Oreos blended into a creamy, dreamy milkshake.",
+  },
+  {
+    name: "Kunafa Crepe",
+    image: kunafacrepe,
+    description: "A Middle Eastern twist — crispy kunafa wrapped in soft crepes with sweet syrup.",
+  },
+  {
+    name: "Pistachio Waffle",
+    image: pistachiowaffle,
+    description: "Golden waffles topped with rich pistachio cream and crunchy pistachio bits.",
+  },
+  {
+    name: "Sushi Rolled Crepes",
+    image: sushirolledcrepes,
+    description: "Fun sushi-style rolled crepes filled with cream, fruits, and drizzles of chocolate.",
+  },
+]
+
 
   const menuRef = useRef(null) // ✅ create a ref
 
