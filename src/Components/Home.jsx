@@ -12,6 +12,10 @@ import wafflepancakes from "../assets/wafflepancakes.jpeg"
 import milkshakes from "../assets/milkshakes.jpg"
 import icecreamandpancakes from "../assets/icecreamandpancakes.jpeg"
 import oreomilkshake from "../assets/oreomilkshake.jpeg"
+import kunafacrepe from "../assets/kunafacrepe.jpeg";
+import pistachiowaffle from "../assets/pistachiowaffle.jpeg";
+import sushirolledcrepes from "../assets/sushirolledcrepes.jpeg";
+
 
 
 function HomePage() {
