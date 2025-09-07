@@ -15,6 +15,8 @@ import oreomilkshake from "../assets/oreomilkshake.jpeg"
 import kunafacrepe from "../assets/kunafacrepe.jpeg";
 import pistachiowaffle from "../assets/pistachiowaffle.jpeg";
 import sushirolledcrepes from "../assets/sushirolledcrepes.jpeg";
+import ediblecups from "../assets/ediblecups.jpeg";
+
 
 
 
@@ -76,7 +78,13 @@ function HomePage() {
     image: sushirolledcrepes,
     description: "Fun sushi-style rolled crepes filled with cream, fruits, and drizzles of chocolate.",
   },
+  {
+    name: "Edible Biscuit Cups",
+    image: ediblecups,
+    description: "Crispy biscuit cups filled with hot tea or coffee — enjoy your drink and then eat the cup too!",
+  },
 ]
+
 
 
   const menuRef = useRef(null) // ✅ create a ref
