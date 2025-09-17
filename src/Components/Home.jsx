@@ -7,7 +7,7 @@ import cookiebasket1 from "../assets/cookiebasket1.jpeg"
 import fettuccinecrepes from "../assets/fettuccinecrepes.jpg"
 import pancakes from "../assets/pancakes1.jpeg"
 import logo from "../assets/fairy1.png"
-import heroBanner from "../assets/hero-banner.png" // <- AI generated image you add here
+import heroBanner from "../assets/hero-banner.png"
 import wafflepancakes from "../assets/wafflepancakes.jpeg"
 import milkshakes from "../assets/milkshakes.jpg"
 import icecreamandpancakes from "../assets/icecreamandpancakes.jpeg"
@@ -17,80 +17,87 @@ import pistachiowaffle from "../assets/pistachiowaffle.jpeg";
 import sushirolledcrepes from "../assets/sushirolledcrepes.jpeg";
 import ediblecups from "../assets/ediblecups.jpeg";
 
-
-
-
 function HomePage() {
 
   const menuItems = [
-  {
-    name: "Buttery Biscuits",
-    image: biscuits,
-    description: "Freshly baked buttery biscuits with a golden crisp outside and soft inside.",
-  },
-  {
-    name: "Cookie Basket",
-    image: cookiebasket1,
-    description: "An assorted basket of our finest cookies, baked with love and premium ingredients.",
-  },
-  {
-    name: "Fettuccine Crepes",
-    image: fettuccinecrepes,
-    description: "Thin and soft crepes, folded with sweet fillings and a drizzle of chocolate.",
-  },
-  {
-    name: "Fluffy Pancakes",
-    image: pancakes,
-    description: "Stacked pancakes served warm with syrup and a sprinkle of sugar magic.",
-  },
-  {
-    name: "Waffles",
-    image: wafflepancakes,
-    description: "Crispy-on-the-outside, fluffy-on-the-inside waffles served pancake-style with syrups.",
-  },
-  {
-    name: "Refreshing Milkshakes",
-    image: milkshakes,
-    description: "Thick, creamy shakes blended with rich flavors and topped with whipped cream.",
-  },
-  {
-    name: "Ice Cream & Fettuccine Crepe",
-    image: icecreamandpancakes,
-    description: "Warm pancakes paired with scoops of ice cream for a perfect hot-and-cold delight.",
-  },
-  {
-    name: "Oreo Milkshake",
-    image: oreomilkshake,
-    description: "A classic favorite — crushed Oreos blended into a creamy, dreamy milkshake.",
-  },
-  {
-    name: "Kunafa Crepe",
-    image: kunafacrepe,
-    description: "A Middle Eastern twist — crispy kunafa wrapped in soft crepes with sweet syrup.",
-  },
-  {
-    name: "Pistachio Waffle",
-    image: pistachiowaffle,
-    description: "Golden waffles topped with rich pistachio cream and crunchy pistachio bits.",
-  },
-  {
-    name: "Sushi Rolled Crepes",
-    image: sushirolledcrepes,
-    description: "Fun sushi-style rolled crepes filled with cream, fruits, and drizzles of chocolate.",
-  },
-  {
-    name: "Edible Biscuit Cups",
-    image: ediblecups,
-    description: "Crispy biscuit cups filled with hot tea or coffee — enjoy your drink and then eat the cup too!",
-  },
-]
+    {
+      name: "Buttery Biscuits",
+      image: biscuits,
+      description: "Freshly baked buttery biscuits with a golden crisp outside and soft inside.",
+      price: "500 PKR",
+    },
+    {
+      name: "Cookie Basket",
+      image: cookiebasket1,
+      description: "An assorted basket of our finest cookies, baked with love and premium ingredients.",
+      price: "650 PKR",
+    },
+    {
+      name: "Fettuccine Crepes",
+      image: fettuccinecrepes,
+      description: "Thin and soft crepes, folded with sweet fillings and a drizzle of chocolate.",
+      price: "750 PKR",
+    },
+    {
+      name: "Fluffy Pancakes",
+      image: pancakes,
+      description: "Stacked pancakes served warm with syrup and a sprinkle of sugar magic.",
+      price: "700 PKR",
+    },
+    {
+      name: "Waffles",
+      image: wafflepancakes,
+      description: "Crispy-on-the-outside, fluffy-on-the-inside waffles served pancake-style with syrups.",
+      price: "800 PKR",
+    },
+    {
+      name: "Refreshing Milkshakes",
+      image: milkshakes,
+      description: "Thick, creamy shakes blended with rich flavors and topped with whipped cream.",
+      price: "600 PKR",
+    },
+    {
+      name: "Ice Cream & Fettuccine Crepe",
+      image: icecreamandpancakes,
+      description: "Warm pancakes paired with scoops of ice cream for a perfect hot-and-cold delight.",
+      price: "850 PKR",
+    },
+    {
+      name: "Oreo Milkshake",
+      image: oreomilkshake,
+      description: "A classic favorite — crushed Oreos blended into a creamy, dreamy milkshake.",
+      price: "650 PKR",
+    },
+    {
+      name: "Kunafa Crepe",
+      image: kunafacrepe,
+      description: "A Middle Eastern twist — crispy kunafa wrapped in soft crepes with sweet syrup.",
+      price: "900 PKR",
+    },
+    {
+      name: "Pistachio Waffle",
+      image: pistachiowaffle,
+      description: "Golden waffles topped with rich pistachio cream and crunchy pistachio bits.",
+      price: "850 PKR",
+    },
+    {
+      name: "Sushi Rolled Crepes",
+      image: sushirolledcrepes,
+      description: "Fun sushi-style rolled crepes filled with cream, fruits, and drizzles of chocolate.",
+      price: "750 PKR",
+    },
+    {
+      name: "Edible Biscuit Cups",
+      image: ediblecups,
+      description: "Crispy biscuit cups filled with hot tea or coffee — enjoy your drink and then eat the cup too!",
+      price: "550 PKR",
+    },
+  ]
 
-
-
-  const menuRef = useRef(null) // ✅ create a ref
+  const menuRef = useRef(null)
 
   const handleScrollToMenu = () => {
-    menuRef.current?.scrollIntoView({ behavior: "smooth" }) // ✅ smooth scroll
+    menuRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
@@ -111,7 +118,7 @@ function HomePage() {
             content: '""',
             position: "absolute",
             inset: 0,
-            background: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55))", // ✅ overlay
+            background: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55))",
             zIndex: 1,
           },
         }}
@@ -140,7 +147,7 @@ function HomePage() {
                 sx={{
                   fontSize: "3.5rem",
                   fontWeight: 700,
-                  color: "#fff", // ✅ white text
+                  color: "#fff",
                   mb: 2,
                 }}
               >
@@ -150,7 +157,7 @@ function HomePage() {
                 component="h2"
                 sx={{
                   fontSize: "2rem",
-                  color: "#FFB6C1", // ✅ soft pink
+                  color: "#FFB6C1",
                   mb: 3,
                   fontStyle: "italic",
                 }}
@@ -191,8 +198,6 @@ function HomePage() {
         </Container>
       </Box>
 
-
-      {/* Menu Section */}
       {/* Menu Section */}
       <Box ref={menuRef} sx={{ py: 8, backgroundColor: "#fff" }}>
         <Container maxWidth="lg">
@@ -216,12 +221,12 @@ function HomePage() {
               <Grid item xs={12} md={6} key={index} sx={{ display: "flex", justifyContent: "center" }}>
                 <Card
                   sx={{
-                    maxWidth: 500,   // ✅ limit card width but still responsive
+                    maxWidth: 500,
                     borderRadius: "15px",
                     boxShadow: "0 6px 20px rgba(0,0,0,0.1)",
                     display: "flex",
                     flexDirection: "column",
-                    width: "100%",   // ✅ ensures it scales down nicely on mobile
+                    width: "100%",
                   }}
                 >
                   <CardMedia
@@ -243,8 +248,11 @@ function HomePage() {
                     >
                       {item.name}
                     </Typography>
-                    <Typography sx={{ fontSize: "0.95rem", color: "#A0522D" }}>
+                    <Typography sx={{ fontSize: "0.95rem", color: "#A0522D", mb: 1 }}>
                       {item.description}
+                    </Typography>
+                    <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#D2691E" }}>
+                      {item.price}
                     </Typography>
                   </CardContent>
                 </Card>
@@ -253,8 +261,6 @@ function HomePage() {
           </Grid>
         </Container>
       </Box>
-
-
     </>
   )
 }
